@@ -1,0 +1,199 @@
+/* global colors and styling */
+* {
+    font-family: 'Montserrat';
+}
+:root {
+    --main-color: black;
+    --secondary-color: black;
+    --tertiary-color: black;
+    --pop-color: lightblue;
+}
+/* header and navigation stylying */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 0 1px 8px var(--tertiary-color);
+}
+#nav-title {
+    margin-right: auto;
+    font-size: 1.15em;
+    background-color: var(--pop-color);
+    color: var(--secondary-color);
+}
+header li {
+    list-style: none;
+    display: inline-flex;
+    font-size: 13.5pt;
+    padding: 0 20px;
+}
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: all 0.3s ease 0s;
+}
+header a:hover {
+    color: goldenrod;
+}
+/* container stylying */
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 40px;
+}
+ul {
+    list-style-type: none;
+ }
+.container h2 {
+    color: var(--pop-color);
+}
+.container a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.biography {
+    min-height: 53vh;
+}
+#resume_container, #skills_container {
+    display: block;
+    padding: 10px 40px;
+}
+.resume object, iframe {
+    display: flex;
+    align-items: center;
+    height: 550px;
+    width: 100%;
+    border: 3pt solid var(--pop-color);
+}
+.highlight_image img, .interests_image img {
+    display: flex;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 150px;
+    height: 150px;
+    flex-wrap: wrap;
+}
+.highlights, .biography, .interests {
+    display: flex;
+}
+.highlight_description, .biography_description, .interests_description, #apod, .desc, p, a{
+    text-decoration: none;
+    font-weight: lighter;
+    color: darkslategrey;
+}
+.biography_image img {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#apod img {
+    border: 3pt solid var(--pop-color);
+}
+.contact_form {
+    display: block;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.contact_form label {
+    font-weight: bold;
+    color: var(--pop-color);
+}
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#submitButton, #button {
+    display: flex;
+    font-size: 11pt;
+    padding: 0.5em;
+    background-color: var(--pop-color);
+    color: var(--secondary-color);
+    border: 2pt solid var(--tertiary-color);
+}
+#button:disabled {
+    background-color: var(--tertiary-color);
+    color: var(--main-color);
+    border: 2pt solid var(--tertiary-color);
+}
+/* footer stylying */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 0 1px 8px #ddd;
+    background-color: var(--pop-color);
+}
+footer p{
+    color: var(--secondary-color);
+}
+/* Vue content stylying */
+.pic1Size {
+    height: 300px;
+    width: 300px;
+    transition: all 0.2s;
+} 
+.pic1EnlargedSize {
+    height: 400px;
+    width: 400px;
+    transition: all 0.2s;
+}
+.pic2Size {
+    height: 300px;
+    width: 300px;
+    transition: all 0.2s;
+} 
+.pic2EnlargedSize {
+    height: 400px;
+    width: 400px;
+    transition: all 0.2s;
+}
+.pic3Size {
+    height: 300px;
+    width: 300px;
+    transition: all 0.2s;
+} 
+.pic3EnlargedSize {
+    height: 400px;
+    width: 400px;
+    transition: all 0.2s;
+}
+.pic4Size {
+    height: 300px;
+    width: 300px;
+    transition: all 0.2s;
+} 
+.pic4EnlargedSize {
+    height: 400px;
+    width: 400px;
+    transition: all 0.2s;
+}
+.pic5Size {
+    height: 300px;
+    width: 300px;
+    transition: all 0.2s;
+} 
+.pic5EnlargedSize {
+    height: 400px;
+    width: 400px;
+    transition: all 0.2s;
+}
+.gallery {
+    text-align: center;
+    flex: 25%;
+    padding: 5px;
+    
+}
+.gallery img {
+    border: 3pt solid var(--pop-color);
+}
+.skills_vue {
+    display: flex;
+    flex-wrap: wrap;
+}

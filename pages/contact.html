@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="../javascript/validateContact.js"></script>
+    <title>Contact | Wenxiao Zhou</title>
+</head>
+
+<body>
+    <div id="application">
+        <div>
+            <!--navigation bar on page-->
+            <div class="title">
+                <header id="nav-title">
+                    <h1>Wenxiao Zhou Portfolio</h1>
+                    <div>
+                        <nav>
+                            <ul>
+                                <li><a href="../pages/biography.html">Biography</a></li>
+                                <li><a href="../pages/resume.html">Resume</a></li>
+                                <li><a href="../pages/skills.html">Skills</a></li>
+                                <li><a href="../pages/interests.html">Interests</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+            <!--container for main content on page-->
+            <div id="contact_container" class="container">
+                <div class="content">
+                    <!--contact form-->
+                    <h1>Contact Me</h1>
+                    <div class="contact">
+                        <form class="contact_form" id="contact_form" target="_blank" action="https://google.com"
+                            onsubmit="return validateForm(event);">
+                            <div id="submitSuccessMessage"></div>
+
+                            <div id="row1">
+                                <label for="firstName" id="firstNamePrompt">First Name</label>
+                                <input type="text" placeholder="Sam" name="firstName" id="firstName" required>
+                                <div id="firstNameError" class="error" style="color: red;"></div>
+                            </div>
+                            <div id="row2">
+                                <label for="lastName" id="lastNamePrompt">Last Name</label>
+
+                                <input type="text" placeholder="Jones" name="lastName" id="lastName" required>
+                                <div id="lastNameError" class="error" style="color: red;"></div>
+                            </div>
+                            <div id="row3">
+                                <label for="email" id="emailPrompt">Email</label>
+
+                                <input type="email" placeholder="example@bu.edu" name="email" id="email" required>
+                                <div id="emailError" class="error" style="color: red;"></div>
+                            </div>
+                            <div id="row4">
+                                <label for="message" id="MessagePrompt">Message</label>
+                                <input type="text" placeholder="Example Message" name="message" id="message">
+                            </div>
+                            <div class="button">
+                                <input type="submit" id="submitButton" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--footer on page-->
+            <footer>
+                <p>© Copyright Wenxiao Zhou 2023-</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
